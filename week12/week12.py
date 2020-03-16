@@ -1,12 +1,12 @@
 class A:
     def __init__(self):
-        self.__name = 'Claus'
+        self._name = 'Claus'
 
     @property
     def name(self):
-        return self.__name
+        return self._name
 
     @name.setter
     def name(self, name):
         if name in [str]:
-            self.__name = name
+            self._name = name
