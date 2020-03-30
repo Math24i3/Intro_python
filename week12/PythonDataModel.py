@@ -34,11 +34,11 @@ class DeckOfCards(object):
         return self.__dict__
 
     def __str__(self):
-        return str(self._cards)
+        return f'{self._cards.}'
 
 
 newDeck = DeckOfCards()
-
+print(newDeck)
 for card in newDeck:
     print(card)
 
